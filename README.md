@@ -1,4 +1,4 @@
-![poster](poster.png)
+![poster](assets/poster.pngposter.png)
 
 # Punk API
 
@@ -16,7 +16,7 @@ Your are building a beer-wiki that uses data from [Punk API:et](https://punkapi.
 
 - The name and a image of the beer should be presented as a card _(se below for an example)_.
 
-![beer](./card.jpg)
+![beer](assets/card.jpg)
 
 - The uses should be able to click on **See more** to get to the `Beer Info Page` _(see more info further down)_.
 
