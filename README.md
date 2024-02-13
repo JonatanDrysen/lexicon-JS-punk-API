@@ -1,4 +1,4 @@
-![poster](assets/poster.pngposter.png)
+![poster](assets/poster.png)
 
 # Punk API
 
