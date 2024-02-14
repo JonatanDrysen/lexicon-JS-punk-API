@@ -11,14 +11,12 @@ export async function createCard(data) {
   title.textContent = beer.name
 
   const seeMore = document.createElement("button")
-  seeMore.textContent = "See More >>"
+  seeMore.textContent = "See more"
   seeMore.addEventListener("click", () => {
     console.log("See More button clicked")
   })
 
-  card.appendChild(img)
-  card.appendChild(title)
-  card.appendChild(seeMore)
+  card.append(img, title, seeMore)
 
   return card
 }

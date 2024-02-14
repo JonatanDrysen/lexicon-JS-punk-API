@@ -1,0 +1,24 @@
+.navbarContainer {
+    background-color: var(--color-dark-pink);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbarList {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbarItem {
+    color: white;
+    margin: 0 4rem;
+    cursor: pointer;
+}
+
+.navbarItem:hover {
+    text-decoration: underline;
+}
