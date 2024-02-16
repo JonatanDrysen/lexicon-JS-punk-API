@@ -13,12 +13,13 @@
     padding: 0;
 }
 
-.navbarItem {
+.navbarLink {
     color: white;
     margin: 0 4rem;
     cursor: pointer;
+    text-decoration: none;
 }
 
-.navbarItem:hover {
+.navbarLink:hover {
     text-decoration: underline;
 }

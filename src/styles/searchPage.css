@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+}
+
+.heroContainer {
+    background-color: var(--color-yellow);
+    display: flex;
+    justify-content: center;
+}
+
+.heroImage {
+    width: 40%;
+}
