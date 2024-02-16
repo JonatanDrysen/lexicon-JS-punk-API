@@ -1,9 +1,21 @@
 import { createCard } from "./card.js"
 
-window.addEventListener("load", () => populateCardWithBeer())
+window.addEventListener("DOMContentLoaded", () => {
+    if (window.location.href.endsWith("homePage.html")) {
+        return;
+    }
+    navigateTo("homePage.html")
+})
+
+populateCardWithBeer()
 document.querySelector(".beerButton").addEventListener("click", () => populateCardWithBeer())
 
-async function fetchRandomBeer() {
+export function navigateTo(page) { // todo: move to util functions folder?
+    const baseURL = "/src"
+    window.location.href = `${baseURL}/${page}`
+}
+
+async function fetchRandomBeer() { // todo: move to util functions folder?
     try {
         const response = await fetch("https://api.punkapi.com/v2/beers/random")
         const data = await response.json()
@@ -24,4 +36,3 @@ async function populateCardWithBeer() {
         container.insertAdjacentElement("afterBegin", newCard)
     }
 }
-
