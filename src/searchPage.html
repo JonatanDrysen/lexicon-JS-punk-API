@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,17 +11,29 @@
     <link rel="stylesheet" href="./styles/nav.css">
     <link rel="stylesheet" href="./styles/card.css">
 </head>
+
 <body>
     <div class="heroContainer">
         <img src="../assets/poster.png" class="heroImage">
-      </div>
-    
-      <div class="navbarContainer">
+    </div>
+
+    <div class="navbarContainer">
         <ul class="navbarList">
             <li class="navbarItem"><a class="navbarLink" href="homePage.html">Home</a></li>
             <li class="navbarItem"><a class="navbarLink" href="searchPage.html">Search</a></li>
         </ul>
     </div>
+
+    <div class="formContainer">
+        <form class="form">
+            <label for="name">Name of the beer:
+                <input type="text">
+            </label>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
     <script type="module" src="js/search.js"></script>
 </body>
+
 </html>
